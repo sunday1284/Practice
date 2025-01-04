@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/ajaxServlet.do")
 public class AjaxServlet extends HttpServlet{
-	
+//	as
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		//JSON 응답 생성
