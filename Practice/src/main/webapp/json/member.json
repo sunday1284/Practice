@@ -1,0 +1,22 @@
+{
+    "results": [{
+        "columns": [
+            {"name": "MEM_ID", "type": "VARCHAR2"},
+            {"name": "MEM_NAME", "type": "VARCHAR2"},
+            {"name": "MEM_PW", "type": "VARCHAR2"},
+            {"name": "MEM_BIR", "type": "DATE"},
+            {"name": "MEM_TEL", "type": "VARCHAR2"},
+            {"name": "MEM_ADDR1", "type": "VARCHAR2"},
+            {"name": "MEM_ADDR2", "type": "VARCHAR2"},
+            {"name": "MEM_CREATE", "type": "DATE"},
+            {"name": "MEM_GRD", "type": "VARCHAR2"}
+        ],
+        "items": [
+            {"mem_id": "qdsadfq", "mem_name": "김길동", "mem_pw": "12342123", "mem_bir": "2025/01/15", "mem_tel": "010-1234-1344", "mem_addr1": "대전 대덕구 갑천도시고속도로 336", "mem_addr2": "301-321", "mem_create": "2025/01/15", "mem_grd": "새싹"},
+            {"mem_id": "sunday1234", "mem_name": "강감찬", "mem_pw": "123513@adsqd", "mem_bir": "2025/01/15", "mem_tel": "010-0000-0000", "mem_addr1": "경기 성남시 분당구 판교대장로 1", "mem_addr2": "204-135", "mem_create": "2025/01/15", "mem_grd": "새싹"},
+            {"mem_id": "glqd", "mem_name": "이몽룡", "mem_pw": "1234", "mem_bir": "2025/01/15", "mem_tel": "010-2121-3333", "mem_addr1": "대전", "mem_addr2": "유성구", "mem_create": "2025/01/15", "mem_grd": "새싹"},
+            {"mem_id": "asdqfS", "mem_name": "성춘향", "mem_pw": "14234qdasdD2", "mem_bir": "2025/01/15", "mem_tel": "010-3233-1111", "mem_addr1": "대전", "mem_addr2": "유성구", "mem_create": "2025/01/15", "mem_grd": "새싹"},
+            {"mem_id": "asfqadq", "mem_name": "최윤식", "mem_pw": "1@34qWedsaq", "mem_bir": "2025/01/15", "mem_tel": "010-0000-0123", "mem_addr1": "대전 유성구 진잠로42번길 88", "mem_addr2": "204-305", "mem_create": "2025/01/15", "mem_grd": "새싹"}
+        ]
+    }]
+}

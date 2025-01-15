@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JSON 데이터 가져오기</title>
+</head>
+<body>
+    <h1>회원 정보</h1>
+    <div id="member-info"></div>
+
+    <script>
+        // member.json 파일에서 데이터를 가져오는 함수
+        async function fetchMemberData() {
+            try {
+                const response = await fetch('member.json');
+                const data = await response.json();
+                displayMemberInfo(data);
+            } catch (error) {
+                console.error('Error fetching member data:', error);
+            }
+        }
+
+        // JSON 데이터에서 특정 값을 추출하여 HTML에 표시하는 함수
+        function displayMemberInfo(data) {
+            const memberInfoDiv = document.getElementById('member-info');
+            const items = data.results[0].items;
+
+            let html = '<ul>';
+            items.forEach(item => {
+                html += '<li>아이디: ' + item.mem_id + '</li>';
+                html += '<li>이름: ' + item.mem_name + '</li>';
+                html += '<li>비밀번호: ' + item.mem_pw + '</li>';
+                html += '<li>생일: ' + item.mem_bir + '</li>';
+                html += '<li>전화번호: ' + item.mem_tel + '</li>';
+                html += '<li>주소: ' + item.mem_addr1 + ' ' + item.mem_addr2 + '</li>';
+                html += '<li>생성일: ' + item.mem_create + '</li>';
+                html += '<li>등급: ' + item.mem_grd + '</li>';
+                html += '<hr>';
+            });
+            html += '</ul>';
+
+            memberInfoDiv.innerHTML = html;
+        }
+
+        // 페이지 로드 시 데이터를 가져오는 함수 호출
+        fetchMemberData();
+    </script>
+</body>
+</html>
